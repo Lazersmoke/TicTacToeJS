@@ -1,0 +1,46 @@
+<html>
+<head>
+<LINK REL="SHORTCUT ICON" HREF="http://lazersmoke.no-ip.org/images/icon.png"/>
+<style>
+body{background-color:#3f003f;color:#dd4814;}
+p{font-family:monospace;font-size:128px}
+</style>
+<script>
+var turnmarker="X";
+
+function taketurn(space){
+if(document.getElementById(space).innerHTML=="#"){
+
+document.getElementById(space).innerHTML=turnmarker
+
+if(turnmarker=="O"){
+turnmarker="X";
+}
+
+else{
+turnmarker="O";
+}
+
+}
+
+}
+</script>
+</head>
+<body>
+<p style="display:inline;" id="1" onclick="taketurn(1)">#</p>
+<p style="display:inline;" id="2" onclick="taketurn(2)">#</p>
+<p style="display:inline;" id="3" onclick="taketurn(3)">#</p>
+<br>
+<p style="display:inline;" id="4" onclick="taketurn(4)">#</p>
+<p style="display:inline;" id="5" onclick="taketurn(5)">#</p>
+<p style="display:inline;" id="6" onclick="taketurn(6)">#</p>
+<br>
+<p style="display:inline;" id="7" onclick="taketurn(7)">#</p>
+<p style="display:inline;" id="8" onclick="taketurn(8)">#</p>
+<p style="display:inline;" id="9" onclick="taketurn(9)">#</p>
+
+<!--vvvv GitHub Banner vvvv-->
+<a href="https://github.com/techy1157"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" alt="Fork me on GitHub"></a>
+<!--^^^^ GitHub Banner ^^^^-->
+</body>
+</html>
