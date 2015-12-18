@@ -9,20 +9,15 @@ p{font-family:monospace;font-size:128px}
 var turnmarker="X";
 
 function taketurn(space){
-if(document.getElementById(space).innerHTML=="#"){
-
-document.getElementById(space).innerHTML=turnmarker
-
-if(turnmarker=="O"){
-turnmarker="X";
-}
-
-else{
-turnmarker="O";
-}
-
-}
-
+  if(document.getElementById(space).innerHTML=="#"){
+    document.getElementById(space).innerHTML=turnmarker
+    if(turnmarker=="O"){
+      turnmarker="X";
+    }
+    else{
+      turnmarker="O";
+    }
+  }
 }
 </script>
 </head>
